@@ -53,3 +53,4 @@ Thumbs.db
 
 # Tailwind CSS
 *.css.map
+.Healthify\frontend\src\assets
