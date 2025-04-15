@@ -4,16 +4,17 @@ import Home from './pages/Home'
 import Doctors from './pages/Doctors'
 import Login from './pages/Login'
 import About from './pages/About'
-import MyAppointements from './pages/MyAppointements'
-import Appointments from './pages/Appointments'
+import MyAppointments from './pages/MyAppointements.jsx'
 import Contacts from './pages/Contacts'
 import MyProfile from './pages/MyProfile'
 import Navbar from './components/Navbar'
+import Appointments from './pages/Appointment.jsx'
+import Footer from './components/Footer.jsx'
 
 
 const App = () => {
   return (
-    <div className='mx-4 sm:mx-[10]'> 
+    <div className=' sm:mx-[10]'> 
     <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -23,9 +24,10 @@ const App = () => {
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contacts />} />
         <Route path='my-profile' element={<MyProfile />} />
-        <Route path='my-appointments' element={<MyAppointements />} />
+        <Route path='my-appointments' element={<MyAppointments />} />
         <Route path='appointment/:docId' element={<Appointments/>} />
-      </Routes> 
+      </Routes>   
+      <Footer />
     </div>
   )
 }

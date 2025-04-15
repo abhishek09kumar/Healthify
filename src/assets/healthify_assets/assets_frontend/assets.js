@@ -57,7 +57,7 @@ export const assets = {
     stripe_logo,
     razorpay_logo
 }
-
+    
 export const specialityData = [
     {
         speciality: 'General physician',
